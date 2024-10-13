@@ -1,0 +1,74 @@
+<html>
+
+  <head>
+
+    <title>Survey Form</title>
+
+      <link rel="stylesheet" type="text/css" href="Form.css" />
+
+      </head>
+
+      <body>
+
+      <header>
+
+        <h1 id="title">Survey Form</h1>
+
+        <p id="description"><em>Please take a moment to fill out this survey. Your feedback is important to us!</em></p>
+
+      </header>
+
+<form id="survey-form" class="survey-form">
+
+  <fieldset>
+
+<div><label id="name-label">Name: <input id="name" type="text"name="name" placeholder="Enter your full name" required/></label></div>
+
+<div><label id="email-label">Email: <input id="email" type="email" name="email" placeholder="Enter your email address" required/></label></div>
+
+<div> <label id="number-label">Age: <input id="number" type="number" name="age" min="18" max="100" placeholder="Your age" required/></label></div>
+
+    </fieldset>
+
+  <fieldset>What did you like most about our seminar?
+
+    <select id="dropdown" name="dropdown">
+
+      <option value="">(select one)</option>
+
+      <option value="1">The expertise and engagement of the speakers</option>
+
+      <option value="2">The engaging activities and group exercises</option>
+
+    </select>
+
+    </fieldset>
+
+  <fieldset>Do you think the seminar was helpful?
+
+   <div> <label><input type="radio" name="referral" class="inline" value="referral"/>Yes</label></div>
+
+ <div> <label><input type="radio" name="referral" class="inline" value="referral"/>No</label></div></fieldset>
+
+  <fieldset>What do you think we should work on more to improve? (choose all that apply)
+
+  <div><label><input type="checkbox" value="suggest" name="price" class="inline">Better time management </label></div>
+
+  <div><label><input type="checkbox" value="checboxes" name="delivery" class="inline">Increase interaction and audience engagement.</label></div>
+
+ <div> <label><input type="checkbox" value="checkboxes" name="packaging" class="inline"> Implementing feedback from participants</label></div>
+
+  <div><label><input type="checkbox" value="checkboxes" name="customer service" class="inline"> Provide more opportunities for networking and collaboration</label></div>
+  </fieldset>
+
+  <fieldset>
+
+       <label>Any comments or suggestions? <textarea rows="3" cols="30" name="textarea"></textarea></label>
+
+ <button id="submit" type="submit" value="Submit">Submit</button>
+
+  </form>
+
+  </body>
+
+  </html>
